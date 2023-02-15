@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   say-hello:
     docker:
-      - image: cimg/android:2023.01
+      - image: cimg/android:2023.02
     steps:
       - checkout
       - run:
