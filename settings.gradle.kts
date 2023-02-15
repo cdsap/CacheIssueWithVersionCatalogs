@@ -33,4 +33,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "CacheIssueWithVersionCatalogs"
-include(":app")
+//include(":app")
+include("core:model")

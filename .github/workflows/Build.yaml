@@ -14,7 +14,7 @@ jobs:
           java-version: 11
       - name: Execute Gradle build
         run: |
-          ./gradlew assembleDebug
+          ./gradlew :core:model:compileKotlin
         env:
           GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GRADLE_ENTERPRISE_ACCESS_KEY }}
   liberica:
@@ -30,6 +30,6 @@ jobs:
           java-version: 11
       - name: Execute Gradle build
         run: |
-          ./gradlew assembleDebug
+          ./gradlew :core:model:compileKotlin
         env:
           GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GRADLE_ENTERPRISE_ACCESS_KEY }}
