@@ -6,7 +6,7 @@ plugins {
 android {
     namespace 'com.example.cacheissuewithversioncatalogs'
     compileSdk 33
-
+    buildToolsVersion "33.0.1"
     defaultConfig {
         applicationId "com.example.cacheissuewithversioncatalogs"
         minSdk 21
