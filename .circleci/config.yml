@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  say-hello:
+    docker:
+      - image: cimg/android:2022.09.2
+    steps:
+      - checkout
+      - run:
+          name: "Assemnle"
+          command: ./gradlew :app:assembleDebug --info
+
+workflows:
+  say-hello-workflow:
+    jobs:
+      - say-hello
