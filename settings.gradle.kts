@@ -33,4 +33,4 @@ dependencyResolutionManagement {
 }
 
 include(":core:model")
-rootProject.name = "Znowinandroid"
+rootProject.name = "cacheissue"
