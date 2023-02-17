@@ -18,9 +18,9 @@ gradleEnterprise {
     buildScan {
         publishAlways()
         capture {
-            taskInputFiles = true
+            isTaskInputFiles = true
         }
-        uploadInBackground = System.getenv("CI") == null
+        isUploadInBackground = System.getenv("CI") == null
     }
 }
 
@@ -32,5 +32,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CacheIssueWithVersionCatalogs"
-include ':app'
+include(":core:model")
+rootProject.name = "cacheissue"
