@@ -10,5 +10,5 @@ buildscript {
 }
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.8.10"
+    alias(libs.plugins.kotlin.jvm) apply false
 }
